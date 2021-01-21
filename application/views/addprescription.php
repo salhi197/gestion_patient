@@ -142,40 +142,6 @@
                                                     </div>
                                                 </div>                                            
                                             </div>
-                                            <div class="row">                                            
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="test" class="col-form-label text-muted">Test</label>
-                                                        <div id="test_entry">
-                                                            <div class="form-group">
-                                                                <div class="row">
-                                                                    <div class="col-md-5">
-                                                                        <input type="text" class="form-control" placeholder="Test Name" name="test_name[]" required="">
-                                                                        <?php if($error['test_name']){?> <span class="text-danger"><?php echo $error['test_name']; ?></span> <?php } ?>
-
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <input type="text" class="form-control" placeholder="Notes" name="test_note[]" required="">
-                                                                        <?php if($error['test_note']){?> <span class="text-danger"><?php echo $error['test_note']; ?></span> <?php } ?>
-                                                                        
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <button type="button" class="btn-sm fcbtn btn btn-outline btn-danger btn-1d" data-toggle="tooltip" data-placement="right" title="Remove" onclick="delele_parent_element(this, 'test')"><i class="fa fa-times"></i></button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div id="append_holder_for_test_entries"></div>
-                                                        <div class="form-group">
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <button type="button" class="btn btn-primary waves-effect waves-light" onclick="append_blank_entry('test')"><i class="fa fa-plus"></i> &nbsp; Add Test</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>                                   
                                 </form>

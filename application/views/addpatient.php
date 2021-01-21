@@ -51,9 +51,9 @@
                                             <label>Civilité : </label>
                                             <select class="form-control" name="civilite" required="">
                                                 <option value="">--Séléctionner Civilité--</option>
-                                                <option  value="mr">Monsieur</option>
-                                                <option  value="mme">Madame</option>
-                                                <option  value="mle">Madamoiselle</option>
+                                                <option  value="Mr">Monsieur</option>
+                                                <option  value="Mme">Madame</option>
+                                                <option  value="Mle">Madamoiselle</option>
                                             </select>
                                         </div>
                                     </div>

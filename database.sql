@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 21 jan. 2021 à 14:08
+-- Généré le : jeu. 21 jan. 2021 à 14:22
 -- Version du serveur :  10.4.17-MariaDB
 -- Version de PHP : 8.0.0
 
@@ -97,7 +97,7 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`patient_id`, `p_name`, `age`, `gender`, `phone`, `add`, `height`, `weight`, `b_group`, `b_pressure`, `pulse`, `respiration`, `allergy`, `diet`, `civilite`, `prenom`) VALUES
-(1, 'ALI', 24, 1, '0551515151', 'cem mohamed lamine lamoudi belfort el-harrach', '180', 90, 'A+', 23, 23, 23, '23', '23', NULL, NULL),
+(1, 'ALI', 24, 1, '0551515151', 'cem mohamed lamine lamoudi belfort el-harrach', '180', 90, 'A+', 23, 23, 23, '23', '23', 'Mr', NULL),
 (2, 'KARIM MOKRANI', 27, 1, '0794498725', 'cem mohamed lamine lamoudi belfort el-harrach', '170', 90, 'O+', 23, 23, 23, '23', '23', 'Mr', NULL),
 (4, 'salhi', 23, 1, '0659439670', 'cem mohamed lamine lamoudi', '180', 80, 'AB+', 23, 23, 23, '23', '23', 'mr', 'haider ali');
 
@@ -128,7 +128,8 @@ CREATE TABLE `prescription` (
 INSERT INTO `prescription` (`prescription_id`, `patient_id`, `symptoms`, `diagnosis`, `medicine`, `m_note`, `test`, `t_note`, `date`, `m_nombre`, `date_ordonnance`) VALUES
 (2, 1, NULL, 'test', '[\"test\",\"gh\"]', '[\"test\",\"gh\"]', '[\"sasasa\"]', '[\"sasas\"]', '2021-01-21', '[\"test\",\"gh\"]', NULL),
 (3, 4, NULL, 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the', '[\"erere\",\"ssasas\",\"s\",\"edvfv\"]', '[\"erer\",\"sasa\",\"s\",\"sfvfdbx\"]', '[\"sa\"]', '[\"sa\"]', '2021-01-21', '[\"errer\",\"sasa\",\"s\",\"dfbxdbcv\"]', NULL),
-(4, 2, NULL, 'test', '[\"test\"]', '[\"test\"]', '[\"test\"]', '[\"test\"]', '2021-01-21', '[\"test\"]', '2021-01-29');
+(4, 2, NULL, 'test', '[\"test\"]', '[\"test\"]', '[\"test\"]', '[\"test\"]', '2021-01-21', '[\"test\"]', '2021-01-29'),
+(5, 1, NULL, 'ddddddddddddd', '[\"sasa\",\"zerere\"]', '[\"sas\",\"zr\"]', '', '', '2021-01-21', '[\"asa\",\"ez\"]', '2021-01-27');
 
 -- --------------------------------------------------------
 
@@ -219,7 +220,7 @@ ALTER TABLE `patient`
 -- AUTO_INCREMENT pour la table `prescription`
 --
 ALTER TABLE `prescription`
-  MODIFY `prescription_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `prescription_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `users`

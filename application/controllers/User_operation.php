@@ -243,14 +243,13 @@ class User_operation extends CI_Controller {
     {
         $this->form_validation->set_rules('patient_id', 'Patient', 'required');
         $this->form_validation->set_rules('date_ordonnance', 'Patient', 'required');
-        // $this->form_validation->set_rules('symptoms', 'Symptoms', 'required');
         $this->form_validation->set_rules('diagnosis', 'Diagnosis', 'required');
         $this->form_validation->set_rules('medicine_name[]', 'Medicine_name', 'required');
         $this->form_validation->set_rules('medicine_note[]', 'Medicine_note', 'required');
         $this->form_validation->set_rules('medicine_nombre[]', 'medicine_nombre', 'required');
 
-        $this->form_validation->set_rules('test_name[]', 'Test_name', 'required');
-        $this->form_validation->set_rules('test_note[]', 'Test_note', 'required');
+        // $this->form_validation->set_rules('test_name[]', 'Test_name', 'required');
+        // $this->form_validation->set_rules('test_note[]', 'Test_note', 'required');
         if ($this->form_validation->run() == FALSE)
         {
             $error['patient_id'] = form_error('patient_id');
@@ -260,8 +259,8 @@ class User_operation extends CI_Controller {
             $error['medicine_name'] = form_error('medicine_name[]');
             $error['medicine_note'] = form_error('medicine_note[]');
             $error['medicine_nombre'] = form_error('medicine_nombre[]');
-            $error['test_name'] = form_error('test_name[]');
-            $error['test_note'] = form_error('test_note[]');
+            // $error['test_name'] = form_error('test_name[]');
+            // $error['test_note'] = form_error('test_note[]');
             $this->session->set_flashdata('error', $error);
             redirect(base_url().'user/addprescription');
         }
@@ -274,8 +273,8 @@ class User_operation extends CI_Controller {
             $data['medicine'] = json_encode($this->input->post('medicine_name[]'));
             $data['m_nombre'] = json_encode($this->input->post('medicine_nombre[]'));
             $data['m_note'] = json_encode($this->input->post('medicine_note[]'));
-            $data['test'] = json_encode($this->input->post('test_name[]'));
-            $data['t_note'] = json_encode($this->input->post('test_note[]'));
+            // $data['test'] = json_encode($this->input->post('test_name[]'));
+            // $data['t_note'] = json_encode($this->input->post('test_note[]'));
             $data['date'] = date('Y-m-d');
             
             if($this->user_mo->addprescription($data))
