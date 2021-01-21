@@ -39,6 +39,7 @@
                 $data = $row_data[0];
                 $info = $this->user_mo->getp_name($data['patient_id']);
                 $medicine = json_decode($data['medicine']);
+                $m_nombre = json_decode($data['m_nombre']);
                 $m_note = json_decode($data['m_note']);
                 $test = json_decode($data['test']);
                 $t_note = json_decode($data['t_note']);
@@ -68,80 +69,53 @@
                                         <div class="col-md-12">
                                             <div class="pull-left">
                                                 <address>
-                                                    <h3><b class="text-danger">Dr. <?php echo $user['doctor_name'] ?></b></h3>
-                                                    <p class="text-muted m-l-5">
-                                                        Addresse<br>
-                                                        Email - <?php echo $user['email'] ?> <br>
-                                                        Téléphone - <?php echo $user['mobile'] ?>
-                                                    </p>
+                                                    <h4>A,</h4>
+                                                    <h5><?php echo $info['p_name']; ?></h5>
+                                                    <p class="text-muted m-l-30"><strong>Téléphone</strong> : <?php echo $info['phone']; ?></p>
                                                 </address>
                                             </div>
                                             <div class="pull-right text-right">
                                                 <address>
-                                                    <h4>A,</h4>
-                                                    <h5><?php echo $info['p_name']; ?></h5>
-                                                    <p class="text-muted m-l-30"><strong>Téléphone</strong> : <?php echo $info['phone']; ?></p>
-                                                    <p class="m-t-30"><b> Date :</b> <i class="fa fa-calendar"></i>&nbsp; <?php echo date('d-m-Y') ?></p>
+                                                    <h3><b class="text-danger">Docteur <?php echo $user['doctor_name'] ?></b></h3>
+                                                    <p class="text-muted m-l-5">
+                                                        <?php echo $user['specialite'] ?><br>
+                                                        Email - <?php echo $user['email'] ?> <br>
+                                                        Téléphone - <?php echo $user['fax'] ?><br>
+                                                        Mob - <?php echo $user['mobile'] ?><br>
+                                                        Email - <?php echo $user['email'] ?><br>                                                        
+                                                    </p>
+                                                    <h4>Alger  <i class="fa fa-calendar"></i>&nbsp; <?php echo $data['date_ordonnance']; ?> </h4>
+                                                    <h5><?php echo $info['civilite'].' '.$info['p_name'].' '.$info['prenom']; ?></h5>
+
                                                 </address>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <h5>Symptômes</h5>
-                                            <p><?php echo $data['symptoms'] ?></p>
+                                        <div class="col-md-12 text-center">
+                                            <h5>Ordonance</h5>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h5>Diagnostic</h5>
-                                            <p><?php echo $data['diagnosis'] ?></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h5>Tests</h5>
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Sr.No</th>
-                                                            <th>Nom</th>
-                                                            <th>Note</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <?php for ( $i=0; $i<count($test); $i++) : ?>
-
-                                                        <tr>
-                                                            <td><?php echo $i+1; ?></td>
-                                                            <td><?php echo $test[$i]; ?></td>
-                                                            <td><?php echo $t_note[$i]; ?></td>
-                                                        </tr>
-                                                            <?php endfor; ?>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
                                             <h5>Médicaments</h5>
                                             <div class="table-responsive">
                                                 <table class="table table-bordered table-hover">
                                                     <thead>
                                                         <tr>
-                                                            <th>Sr.No</th>
+                                                            <th>Médic</th>
                                                             <th>Nom</th>
-                                                            <th>Note</th>
+                                                            <th>Nombre</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <?php for ( $i=0; $i<count($medicine); $i++) : ?>
 
                                                         <tr>
-                                                            <td><?php echo $i+1; ?></td>
                                                             <td><?php echo $medicine[$i]; ?></td>
                                                             <td><?php echo $m_note[$i]; ?></td>
+                                                            <td><?php echo $m_nombre[$i]; ?></td>
+                                                            
                                                         </tr>
                                                             <?php endfor; ?>
 
@@ -151,6 +125,26 @@
                                         </div>
                                     </div>
                                     <hr>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <h5>
+                                            <?php echo $user['footer_1']; ?>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <h5>
+                                            <?php echo $user['footer_2']; ?>
+                                            </h5>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -161,6 +155,6 @@
         
     <?php } include_once('includes/footer_start.php'); ?>
 
-        <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/print.js"></script>
-        <script src="<?php echo base_url(); ?>assets/js/printThis.js"></script>
+        <!-- <script type="text/javascript" src="<?php //echo base_url(); ?>assets/js/print.js"></script> -->
+        <!-- <script src="<?php //echo base_url(); ?>assets/js/printThis.js"></script> -->
     <?php include_once('includes/footer_end.php'); ?>

@@ -48,6 +48,18 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
+                                            <label>Civilité : </label>
+                                            <select class="form-control" name="civilite" required="">
+                                                <option value="">--Séléctionner Civilité--</option>
+                                                <option  value="mr">Monsieur</option>
+                                                <option  value="mme">Madame</option>
+                                                <option  value="mle">Madamoiselle</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
                                             <label>Nom</label>
                                             <input type="text" class="form-control" name="name" placeholder="Enter patient name" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" required="">
                                             <?php if($error['name']){?> <span class="text-danger"><?php echo $error['name']; ?></span> <?php } ?>
@@ -76,7 +88,7 @@
                                         <div class="form-group">
                                             <label>Genre</label>
                                             <select class="form-control" name="gender" required="">
-                                                <option value="">--Select Gender--</option>
+                                                <option value="">--Séléctionner Gender--</option>
                                                 <option  value="1">Male</option>
                                                 <option  value="2">Female</option>
                                             </select>

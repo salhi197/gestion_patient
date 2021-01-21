@@ -73,7 +73,7 @@
                                         <div class="form-group">
                                             <label>Gender</label>
                                             <select class="form-control" name="gender">
-                                                <option value="0">--Select Gender--</option>
+                                                <option value="0">--Séléctionner Gender--</option>
                                                 <?php 
                                                     if($data[0]['gender'] == 1 )
                                                     {

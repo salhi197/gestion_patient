@@ -54,6 +54,7 @@
                                         <tr>
                                             <th>Sr.No.</th>
                                             <th>Nom</th>
+                                            <th>Prénom</th>
                                             <th>Téléphone</th>
                                             <th>Age</th>
                                             <th>Address</th>
@@ -67,6 +68,7 @@
                                             <tr>
                                                 <td><?php echo $i; ?></td>
                                                 <td><?php echo $data['p_name']; ?></td>
+                                                <td><?php echo $data['prenom']; ?></td>
                                                 <td><?php echo $data['phone']; ?></td>
                                                 <td><?php echo $data['age']; ?></td>
                                                 <td><?php echo $data['add']; ?></td>

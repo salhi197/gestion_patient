@@ -58,7 +58,7 @@
                                                                 <option value="">Selectionner</option>
                                                                     <?php foreach ( $info as $data ) : ?>
 
-                                                                <option value="<?php echo $data['patient_id']; ?>"><?php echo $data['p_name']; ?></option>
+                                                                <option value="<?php echo $data['patient_id']; ?>"><?php echo $data['p_name'].' '.$data['prenom'] ; ?></option>
 
                                                                     <?php endforeach; ?>
 
@@ -70,13 +70,13 @@
                                                 </div>
                                             </div>
 
+
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="patient" class="col-form-label text-muted">Date Ordonnance :</label>
-                                                        <input type="date" class="form-control" placeholder="Test Name" name="date_ordonnance" >
+                                                        <label for="diagnosis" class="col-form-label text-muted">Date Ordonnance</label>
+                                                        <input type="date" class="form-control" name="date_ordonnance" required="">
                                                         <?php if($error['date_ordonnance']){?> <span class="text-danger"><?php echo $error['date_ordonnance']; ?></span> <?php } ?>
-
 
                                                     </div>
                                                 </div>
@@ -121,8 +121,8 @@
                                                                     </div>
 
                                                                     <div class="col-md-3">
-                                                                        <input type="text" class="form-control" placeholder="Notes" name="medicine_note[]" required="">
-                                                                        <?php if($error['medicine_note']){?> <span class="text-danger"><?php echo $error['medicine_note']; ?></span> <?php } ?>
+                                                                        <input type="text" class="form-control" placeholder="Notes" name="medicine_nombre[]" required="">
+                                                                        <?php if($error['medicine_nombre']){?> <span class="text-danger"><?php echo $error['medicine_nombre']; ?></span> <?php } ?>
                                                                     </div>
 
                                                                     <div class="col-md-2">

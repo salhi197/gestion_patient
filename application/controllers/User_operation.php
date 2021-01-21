@@ -116,6 +116,9 @@ class User_operation extends CI_Controller {
     public function addpatient()
     {
         $this->form_validation->set_rules('name', 'Patient name', 'required');
+        $this->form_validation->set_rules('prenom', 'Patient prenom', 'required');
+        $this->form_validation->set_rules('civilite', 'Patient civilite', 'required');
+        
         $this->form_validation->set_rules('age', 'Age', 'required|numeric');
         $this->form_validation->set_rules('gender', 'Gender', 'required');
         $this->form_validation->set_rules('phone', 'Phone Number', 'required|regex_match[/^[0-9\+-]+$/]');
@@ -131,6 +134,8 @@ class User_operation extends CI_Controller {
         if ($this->form_validation->run() == FALSE)
         {
             $error['name'] = form_error('name');
+            $error['prenom'] = form_error('prenom');
+            $error['civilite'] = form_error('civilite');
             $error['age'] = form_error('age');
             $error['gender'] = form_error('gender');
             $error['phone'] = form_error('phone');
@@ -149,6 +154,8 @@ class User_operation extends CI_Controller {
         else
         {
             $data['p_name'] = $this->input->post('name');
+            $data['prenom'] = $this->input->post('prenom');
+            $data['civilite'] = $this->input->post('civilite');
             $data['age'] = $this->input->post('age');
             $data['gender'] = $this->input->post('gender');
             $data['phone'] = $this->input->post('phone');
@@ -235,19 +242,24 @@ class User_operation extends CI_Controller {
     public function addprescription()
     {
         $this->form_validation->set_rules('patient_id', 'Patient', 'required');
-        $this->form_validation->set_rules('symptoms', 'Symptoms', 'required');
+        $this->form_validation->set_rules('date_ordonnance', 'Patient', 'required');
+        // $this->form_validation->set_rules('symptoms', 'Symptoms', 'required');
         $this->form_validation->set_rules('diagnosis', 'Diagnosis', 'required');
         $this->form_validation->set_rules('medicine_name[]', 'Medicine_name', 'required');
         $this->form_validation->set_rules('medicine_note[]', 'Medicine_note', 'required');
+        $this->form_validation->set_rules('medicine_nombre[]', 'medicine_nombre', 'required');
+
         $this->form_validation->set_rules('test_name[]', 'Test_name', 'required');
         $this->form_validation->set_rules('test_note[]', 'Test_note', 'required');
         if ($this->form_validation->run() == FALSE)
         {
             $error['patient_id'] = form_error('patient_id');
-            $error['symptoms'] = form_error('symptoms');
+            $error['date_ordonnance'] = form_error('date_ordonnance');
+            // $error['symptoms'] = form_error('symptoms');
             $error['diagnosis'] = form_error('diagnosis');
             $error['medicine_name'] = form_error('medicine_name[]');
             $error['medicine_note'] = form_error('medicine_note[]');
+            $error['medicine_nombre'] = form_error('medicine_nombre[]');
             $error['test_name'] = form_error('test_name[]');
             $error['test_note'] = form_error('test_note[]');
             $this->session->set_flashdata('error', $error);
@@ -256,9 +268,11 @@ class User_operation extends CI_Controller {
         else
         {
             $data['patient_id'] = $this->input->post('patient_id');
-            $data['symptoms'] = $this->input->post('symptoms');
+            $data['date_ordonnance'] = $this->input->post('date_ordonnance');
+            // $data['symptoms'] = $this->input->post('symptoms');
             $data['diagnosis'] = $this->input->post('diagnosis');
             $data['medicine'] = json_encode($this->input->post('medicine_name[]'));
+            $data['m_nombre'] = json_encode($this->input->post('medicine_nombre[]'));
             $data['m_note'] = json_encode($this->input->post('medicine_note[]'));
             $data['test'] = json_encode($this->input->post('test_name[]'));
             $data['t_note'] = json_encode($this->input->post('test_note[]'));
