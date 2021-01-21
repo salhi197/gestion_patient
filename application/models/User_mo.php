@@ -223,6 +223,8 @@ class User_mo extends CI_Model {
 		$this->db->set('doctor_name',$data['name']);
 		$this->db->set('email',$data['email']);
 		$this->db->set('mobile',$data['phone']);
+		$this->db->set('footer_1',$data['footer_1']);
+		$this->db->set('footer_2',$data['footer_2']);
 		$this->db->where('user_name',$data['user_name']);
 		$this->db->update('users');
 		return true;

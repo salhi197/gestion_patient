@@ -57,6 +57,25 @@
                                                     $info['mobile'] ?>" required="">
                                             </div>
                                         </div>
+
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Footer 1 : </label>
+                                                <textarea name="footer_1" class="form-control"><?php echo $info['footer_1']; ?></textarea>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Footer 2 : </label>
+                                                <textarea name="footer_2" class="form-control"><?php echo $info['footer_2']; ?></textarea>
+
+                                            </div>
+                                        </div>
+
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <button type="submit" class="btn btn-primary waves-effect waves-light">Enregistrer</button>

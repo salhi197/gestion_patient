@@ -351,6 +351,12 @@ class User_operation extends CI_Controller {
         $data['name'] = $this->input->post('name');
         $data['email'] = $this->input->post('email');
         $data['phone'] = $this->input->post('phone');
+        /**
+         * new footes
+         */
+        $data['footer_1'] = $this->input->post('footer_1');
+        $data['footer_2'] = $this->input->post('footer_2');
+
         $data['user_name'] = $user['username'];
 
         if($this->user_mo->updateprofile($data))

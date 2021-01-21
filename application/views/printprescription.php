@@ -130,18 +130,18 @@
                                     <br>
                                     <br>
                                     <div class="row">
-                                        <div class="col-md-12 text-center">
-                                            <h5>
+                                        <div class="col-md-12">
+                                            <h6>
                                             <?php echo $user['footer_1']; ?>
-                                            </h5>
+                                            </h6>
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="row">
-                                        <div class="col-md-12 text-center">
-                                            <h5>
+                                        <div class="col-md-12">
+                                            <h6>
                                             <?php echo $user['footer_2']; ?>
-                                            </h5>
+                                            </h6>
                                         </div>
                                     </div>
 
