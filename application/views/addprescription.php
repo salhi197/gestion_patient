@@ -121,7 +121,7 @@
                                                                     </div>
 
                                                                     <div class="col-md-3">
-                                                                        <input type="text" class="form-control" placeholder="Notes" name="medicine_nombre[]" required="">
+                                                                        <input type="text" class="form-control" placeholder="QSP" name="medicine_nombre[]" required="">
                                                                         <?php if($error['medicine_nombre']){?> <span class="text-danger"><?php echo $error['medicine_nombre']; ?></span> <?php } ?>
                                                                     </div>
 
