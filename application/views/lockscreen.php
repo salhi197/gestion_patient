@@ -9,7 +9,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title><?php echo $data[0]['title']; ?> - Patient Management System</title>
+        <title><?php echo $data[0]['title']; ?> - Système de gestion des patients</title>
         <meta content="Doctorist - Patient Management System" name="description" />
         <meta content="Landinghub(themesbrand)" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,7 +39,7 @@
                     </h3>
                     <div class="p-3">
                         <h4 class="text-muted font-18 m-b-5 text-center">Locked</h4>
-                        <p class="text-muted text-center">Hello Smith, enter your password to unlock the screen!</p>
+                        <p class="text-muted text-center">Bonjour Smith, entrez votre mot de passe pour déverrouiller l'écran!</p>
                         <form class="form-horizontal m-t-30" method="post" action="<?php echo base_url('user_operation/login'); ?>">
                             <div class="user-thumb text-center m-b-30">
                                 <img src="<?php echo base_url(); ?>assets/images/users/avatar-1.jpg" class="rounded-circle img-thumbnail" alt="thumbnail">
@@ -55,7 +55,7 @@
 
                             <div class="form-group row m-t-20">
                                 <div class="col-12 text-right">
-                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Unlock</button>
+                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Ouvrir</button>
                                 </div>
                             </div>
                         </form>

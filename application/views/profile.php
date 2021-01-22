@@ -100,13 +100,13 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Nouveau mdp :</label>
+                                                <label>Nouveau Mot de passe </label>
                                                 <input type="Password" class="form-control" name="npass" id="npass" required="">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Confirmer mdp </label>
+                                                <label>Confirmer Mot de passe </label>
                                                 <input type="Password" class="form-control" name="rpass" id="rpass" required="">
                                             </div>
                                         </div>

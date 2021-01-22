@@ -38,9 +38,9 @@
                     </h3>
 
                     <div class="p-3">
-                        <h4 class="text-muted font-18 m-b-5 text-center">Reset Password</h4>
-                        <p class="text-muted text-center"><label class="status">Enter your email and instructions will be sent to you!</label></p>
-                        <p class="text-muted text-center">Disabled in demo mode</p>
+                        <h4 class="text-muted font-18 m-b-5 text-center">réinitialiser le mot de passe</h4>
+                        <p class="text-muted text-center"><label class="status">Entrez votre email et les instructions vous seront envoyées!</label></p>
+                        <p class="text-muted text-center">Désactivé en mode démo</p>
                         <form class="form-horizontal m-t-30">
                             <div class="form-group">
                                 <label for="useremail">Email</label>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="m-t-40 text-center">
-                <p class="text-white">Remember It ? <a href="<?php echo base_url(); ?>" class="font-500 font-14 text-white font-secondary"> Sign In Here </a> </p>
+                <p class="text-white">Souviens toi ?<a href="<?php echo base_url(); ?>" class="font-500 font-14 text-white font-secondary"> Se connecter ici</a> </p>
                 <p class="text-white">© <?php $data = $this->user_mo->get_user(); echo date('Y').' '.$data[0]['title']; ?>. Crafted with <i class="mdi mdi-heart text-danger"></i> by Landinghub</p>
             </div>
         </div>
