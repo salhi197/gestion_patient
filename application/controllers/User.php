@@ -100,13 +100,22 @@ class User extends CI_Controller {
 
 	public function download_prescription()
 	{
+		$id = $this->uri->segment(3);
+        $row_data = $this->user_mo->getprescriptionbyid($id);
+		// print_r($row_data);
 		$this->load->library('pdf');
 		$html = 'testing pdf testing pdf';
 		$dompdf = new PDF();
 		$dompdf->load_html($html);
+		
 		$dompdf->render();
-		$output = $dompdf->output();
-		file_put_contents('test.pdf', $output);
+		$dompdf->stream("pdf_filename_".rand(10,1000).".pdf", array("Attachment" => false));
+
+		// $output = $dompdf->output();
+		// file_put_contents('test.pdf', $output);
+		$data['title'] = "Print Prescription";
+		$this->load->view('printprescription',$data);
+
 	}
 
 

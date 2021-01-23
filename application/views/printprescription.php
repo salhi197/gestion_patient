@@ -54,7 +54,7 @@
                     <div class="col-12">
                         <div class="m-b-20">                                
                             <a href="<?php echo base_url('user/prescription'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-arrow-left"></i>&nbsp; Back to Prescription List</button></a>                                           
-                            <a href="<?php echo base_url('user/download_prescription')."/".$id  ;?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-download"></i>&nbsp; Télécharger</button></a>                                           
+                            <a target="_blank" href="<?php echo base_url('user/download_prescription')."/".$id  ;?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-download"></i>&nbsp; Télécharger</button></a>                                           
                             <button type="button" class="btn btn-primary waves-effect waves-light" onclick="print_div()"><i class="fa fa-print"></i>&nbsp; Imprimer Ordonnance</button>
                         </div>
                     </div>
