@@ -21,7 +21,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title><?php echo $data[0]['title']; ?> - Gestion des Patients</title>
+        <title><?php echo $data[0]['title']; ?> - Gestion des patients</title>
         <meta content="Doctorist - Patient Management System" name="description" />
         <meta content="Cosmos(themesbrand)" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -55,7 +55,7 @@
                         <p class="text-danger text-center"><?php $data = $this->session->flashdata('msg'); echo $data; ?></p>
                         <form class="form-horizontal m-t-30" method="post" action="<?php echo base_url('user_operation/login'); ?>">
                             <div class="form-group">
-                                <label for="username">Username</label>
+                                <label for="username">Nom d'utilisateur</label>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" autofocus>
                             </div>
 
@@ -73,7 +73,7 @@
                                     </label>
                                 </div>
                                 <div class="col-sm-6 text-right">
-                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Log In</button>
+                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">S'identifier</button>
                                 </div>
                             </div>
 

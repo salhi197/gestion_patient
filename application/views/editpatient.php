@@ -18,10 +18,10 @@
                         <div class="btn-group pull-right">
                             <ol class="breadcrumb hide-phone p-0 m-0">
                                 <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>"><?php echo $sys_title[0]['title']; ?></a></li>
-                                <li class="breadcrumb-item active">Edit Patient Information</li>
+                                <li class="breadcrumb-item active">Modifier les informations du patient</li>
                             </ol>
                         </div>
-                        <h4 class="page-title">Edit Patient Information</h4>
+                        <h4 class="page-title">Modifier les informations du patient</h4>
                     </div>
                 </div>
             </div>
@@ -51,19 +51,19 @@
                 <div class="col-12">
                     <div class="card m-b-20">
                         <div class="card-block">
-                            <blockquote class="bg-info text-white">Basic Information</blockquote>
+                            <blockquote class="bg-info text-white">Informations de base</blockquote>
                             <form name="addpatient" id="addpatient" method="post" action="<?php echo base_url('user_operation/editpatient'); ?>">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Name</label>
+                                            <label>Nom</label>
                                             <input type="text" class="form-control" name="name" placeholder="Enter patient name" required="" value="<?php echo $data[0]['p_name'] ?>">
                                             <input type="hidden" name="patient_id" value="<?php echo $data[0]['patient_id']; ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Age</label>
+                                            <label>Âge</label>
                                             <input type="text" class="form-control" placeholder="Enter patient's age" name="age" required="" value="<?php echo $data[0]['age'] ?>">
                                         </div>
                                     </div>
@@ -71,14 +71,14 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Gender</label>
+                                            <label>Le sexe</label>
                                             <select class="form-control" name="gender">
-                                                <option value="0">--Séléctionner Gender--</option>
+                                                <option value="0">--Genre du Séléctionner--</option>
                                                 <?php 
                                                     if($data[0]['gender'] == 1 )
                                                     {
                                                 ?>
-                                                    <option  value="1" selected>Male</option>
+                                                    <option  value="1" selected>Mâle</option>
                                                 <?php
                                                      }
                                                      else
@@ -90,7 +90,7 @@
                                                     if($data[0]['gender'] == 2 )
                                                     {
                                                 ?>
-                                                    <option  value="2" selected>Female</option>
+                                                    <option  value="2" selected>Femelle</option>
                                                 <?php
                                                      }
                                                      else
@@ -103,28 +103,28 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Phone Number</label>
+                                            <label>Numéro de téléphone</label>
                                             <input type="text" class="form-control" name="phone" placeholder="Enter phone number" required="" value="<?php echo $data[0]['phone'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Address</label>
+                                            <label>Adresse</label>
                                             <textarea name="add" rows="3" class="form-control" placeholder="Enter current address" required=""><?php echo $data[0]['add'] ?></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <blockquote class="bg-info text-white mt-5">Medical Information</blockquote>
+                                <blockquote class="bg-info text-white mt-5">Information médicale</blockquote>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Height</label>
+                                            <label>la taille</label>
                                             <input type="text" class="form-control" name="height" placeholder="Enter height" required="" value="<?php echo $data[0]['height'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Weight</label>
+                                            <label>Poids</label>
                                             <input type="text" class="form-control" name="weight" placeholder="Enter weight" required="" value="<?php echo $data[0]['weight'] ?>">
                                         </div>
                                     </div>
@@ -132,13 +132,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Blood Group</label>
+                                            <label>Groupe sanguin</label>
                                             <input type="text" class="form-control" name="blood_group" placeholder="Enter blood group" required="" value="<?php echo $data[0]['b_group'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Blood Pressure</label>
+                                            <label>Pression artérielle</label>
                                             <input type="text" class="form-control" name="blood_pressure" placeholder="Enter blood pressure" required="" value="<?php echo $data[0]['b_pressure'] ?>">
                                         </div>
                                     </div>
@@ -146,7 +146,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Pulse</label>
+                                            <label>Impulsion</label>
                                             <input type="text" class="form-control" name="pulse" placeholder="Enter pulse" required="" value="<?php echo $data[0]['pulse'] ?>">
                                         </div>
                                     </div>
@@ -160,13 +160,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Allergy</label>
+                                            <label>Allergie</label>
                                             <input type="text" class="form-control" name="allergy" placeholder="Enter allergy symptoms" required="" value="<?php echo $data[0]['allergy'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Diet</label>
+                                            <label>Régime</label>
                                             <input type="text" class="form-control" name="diet" placeholder="Enter diet" required="" value="<?php echo $data[0]['diet'] ?>">
                                         </div>
                                     </div>
