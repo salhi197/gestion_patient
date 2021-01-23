@@ -98,6 +98,18 @@ class User extends CI_Controller {
 		$this->load->view('printprescription',$data);
 	}
 
+	public function download_prescription()
+	{
+		$this->load->library('pdf');
+		$html = 'testing pdf testing pdf';
+		$dompdf = new PDF();
+		$dompdf->load_html($html);
+		$dompdf->render();
+		$output = $dompdf->output();
+		file_put_contents('test.pdf', $output);
+	}
+
+
 	public function createinvoice()
 	{
 		$data['title'] = "Create New Invoice";
