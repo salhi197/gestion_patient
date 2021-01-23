@@ -104,7 +104,54 @@ class User extends CI_Controller {
         $row_data = $this->user_mo->getprescriptionbyid($id);
 		// print_r($row_data);
 		$this->load->library('pdf');
-		$html = 'testing pdf testing pdf';
+		$path="assets/images/background1.jpg";
+	
+		$html = '
+
+		<html>
+		<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+		<style type="text/css">
+		<!--
+		span.cls_003{font-family:"Arabic Typesetting",serif;font-size:18.4px;color:rgb(36,94,134);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_003{font-family:"Arabic Typesetting",serif;font-size:18.4px;color:rgb(36,94,134);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_004{font-family:"Arabic Typesetting",serif;font-size:18.4px;color:rgb(33,136,95);font-weight:normal;font-style:normal;text-decoration: none}
+		div.cls_004{font-family:"Arabic Typesetting",serif;font-size:18.4px;color:rgb(33,136,95);font-weight:normal;font-style:normal;text-decoration: none}
+		span.cls_002{font-family:"Arabic Typesetting",serif;font-size:9.5px;color:rgb(38,102,146);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_002{font-family:"Arabic Typesetting",serif;font-size:9.5px;color:rgb(38,102,146);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_007{font-family:Arial,serif;font-size:9.7px;color:rgb(38,102,146);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_007{font-family:Arial,serif;font-size:9.7px;color:rgb(38,102,146);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_010{font-family:Arial,serif;font-size:21.5px;color:rgb(38,102,146);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_010{font-family:Arial,serif;font-size:21.5px;color:rgb(38,102,146);font-weight:bold;font-style:normal;text-decoration: none}
+		span.cls_011{font-family:"Arabic Typesetting",serif;font-size:7.1px;color:rgb(33,136,95);font-weight:bold;font-style:normal;text-decoration: none}
+		div.cls_011{font-family:"Arabic Typesetting",serif;font-size:7.1px;color:rgb(33,136,95);font-weight:bold;font-style:normal;text-decoration: none}
+		-->
+		</style>
+		<script type="text/javascript" src="4da245fa-5cc2-11eb-8b25-0cc47a792c0a_id_4da245fa-5cc2-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+		</head>
+		<body>
+		<div style="position:absolute;top:0px;width:100%;height:100%;border-style:outset;overflow:hidden">
+		<div style="position:absolute;left:0px;top:0px">
+		<img src="'.$path.'" width=419 height=595></div>
+		<div style="position:absolute;left:204.05px;top:19.29px" class="cls_003"><span class="cls_003">Docteur KESKAS Ryma</span></div>
+		<div style="position:absolute;left:203.81px;top:46.19px" class="cls_003"><span class="cls_003">ﺔﻤﻳر سﺎﻜﺴﻛ ةرﻮﺘﻛﺪﻟا</span></div>
+		<div style="position:absolute;left:214.77px;top:71.51px" class="cls_004"><span class="cls_004">Gastro-entérologue</span></div>
+		<div style="position:absolute;left:17.83px;top:118.87px" class="cls_002"><span class="cls_002">le tube digestif (œsophage, estomac, intestins, le colon et le rectum), le foie , le pancréas</span></div>
+		<div style="position:absolute;left:270.91px;top:162.90px" class="cls_007"><span class="cls_007">Sétif le :</span></div>
+		<div style="position:absolute;left:14.51px;top:190.43px" class="cls_007"><span class="cls_007">Nom :</span></div>
+		<div style="position:absolute;left:158.46px;top:190.43px" class="cls_007"><span class="cls_007">Prénom :</span></div>
+		<div style="position:absolute;left:322.22px;top:188.60px" class="cls_007"><span class="cls_007">Age :</span></div>
+		<div style="position:absolute;left:132.39px;top:213.72px" class="cls_010"><span class="cls_010">ORDONNANCE</span></div>
+		<div style="position:absolute;left:31.09px;top:566.58px" class="cls_011"><span class="cls_011">07 70 82 43 53</span></div>
+		<div style="position:absolute;left:199.48px;top:566.58px" class="cls_011"><span class="cls_011">Cite 17 Octobre Chaabat el far</span></div>
+		<div style="position:absolute;left:113.59px;top:570.24px" class="cls_011"><span class="cls_011">+213 035 693 866</span></div>
+		<div style="position:absolute;left:322.25px;top:570.55px" class="cls_011"><span class="cls_011">Keskasryma@hotmail.com</span></div>
+		<div style="position:absolute;left:31.09px;top:575.06px" class="cls_011"><span class="cls_011">07 92 50 42 49</span></div>
+		<div style="position:absolute;left:199.48px;top:575.06px" class="cls_011"><span class="cls_011">Rue BE n°21 , Setif</span></div>
+		</div>
+		</body>
+		</html>				
+		';
+		
 		$dompdf = new PDF();
 		$dompdf->load_html($html);
 		

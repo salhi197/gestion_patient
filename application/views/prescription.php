@@ -71,7 +71,7 @@
                                             <td><?php echo $data['date']; ?></td>
                                             <td><?php echo $data['p_name']; ?></td>
                                             <td>
-                                                <a href="<?php echo base_url('user/print_prescription')."/".$data['prescription_id'];?>"><button type="button" class="btn btn-1d btn-sm btn-outline-primary waves-effect waves-light">Imprimer Ordonnance</button></a>
+                                                <a href="<?php echo base_url('user/print_prescription')."/".$data['prescription_id'];?>"><button type="button" class="btn btn-1d btn-sm btn-outline-primary waves-effect waves-light">Consulter</button></a>
                                                 <a target="_blank" href="<?php echo base_url('user/download_prescription')."/".$data['prescription_id'];?>"><button type="button" class="btn btn-1d btn-sm btn-outline-primary waves-effect waves-light">Télécharger Ordonnance</button></a>
                                                 <a href="<?php echo base_url('user_operation/deleteprescription')."/".$data['prescription_id'];?>"><button type="button" class="btn btn-1d btn-sm btn-outline-primary waves-effect waves-light"><i class="fa fa-trash-o"></i></button></a>
                                             </td>

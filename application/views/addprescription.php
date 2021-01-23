@@ -7,6 +7,7 @@
         <link href="<?php echo base_url(); ?>assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
 <?php include_once('includes/header_end.php'); 
     $data = $this->user_mo->get_user();
+    $id = $this->uri->segment(4);
     $error = $this->session->flashdata('error');
 ?>
 
@@ -22,7 +23,7 @@
                                     <li class="breadcrumb-item active">Ajouter une Ordonance</li>
                                 </ol>
                             </div>
-                            <h4 class="page-title">Ajouter une Ordonance</h4>
+                            <h4 class="page-title">Ajouter une Ordonance </h4>
                         </div>
                     </div>
                 </div>
@@ -58,7 +59,10 @@
                                                                 <option value="">Selectionner</option>
                                                                     <?php foreach ( $info as $data ) : ?>
 
-                                                                <option value="<?php echo $data['patient_id']; ?>"><?php echo $data['p_name'].' '.$data['prenom'] ; ?></option>
+                                                                <option value="<?php echo $data['patient_id']; ?>"
+                                                                <?php if($id==$data['patient_id']) echo "selected";  ?>
+                                                                
+                                                                ><?php echo $data['p_name'].' '.$data['prenom'] ; ?></option>
 
                                                                     <?php endforeach; ?>
 
@@ -89,7 +93,7 @@
                                                     <div class="form-group">
                                                         <label for="diagnosis" class="col-form-label text-muted">Remarque</label>
                                                         <div class="input-group">
-                                                            <textarea class="form-control" name="diagnosis" id="diagnosis" placeholder="Add Diagnosis" rows="3" required=""></textarea>                                                        
+                                                            <textarea class="form-control" name="diagnosis" id="diagnosis" placeholder="Ajouter diagnotique" rows="3" required=""></textarea>                                                        
                                                         </div>
                                                         <?php if($error['diagnosis']){?> <span class="text-danger"><?php echo $error['diagnosis']; ?></span> <?php } ?>
 
@@ -111,7 +115,7 @@
                                                             <div class="form-group">
                                                                 <div class="row">
                                                                     <div class="col-md-3">
-                                                                        <input type="text" class="form-control" placeholder="Medicine Name" name="medicine_name[]" required="">
+                                                                        <input type="text" class="form-control" placeholder="Nom de medicament " name="medicine_name[]" required="">
                                                                         <?php if($error['medicine_name']){?> <span class="text-danger"><?php echo $error['medicine_name']; ?></span> <?php } ?>
 
                                                                     </div>
@@ -136,12 +140,50 @@
                                                     <div class="form-group">
                                                         <div class="row">
                                                             <div class="col-md-12">
-                                                                <button type="button" class="btn btn-primary waves-effect waves-light" onclick="append_blank_entry('medicine')"><i class="fa fa-plus"></i> &nbsp; Add Medicine</button>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light" onclick="append_blank_entry('medicine')"><i class="fa fa-plus"></i> &nbsp; Ajouter Medicament</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>                                            
                                             </div>
+
+                                            
+                                            <div class="row">                                            
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="test" class="col-form-label text-muted">Consultaion </label>
+                                                        <div id="test_entry">
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-5">
+                                                                        <input type="text" class="form-control" placeholder="Nom de consulation" name="test_name[]" required="">
+                                                                        <?php if($error['test_name']){?> <span class="text-danger"><?php echo $error['test_name']; ?></span> <?php } ?>
+
+                                                                    </div>
+                                                                    <div class="col-md-5">
+                                                                        <input type="text" class="form-control" placeholder="Notes" name="test_note[]" required="">
+                                                                        <?php if($error['test_note']){?> <span class="text-danger"><?php echo $error['test_note']; ?></span> <?php } ?>
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <button type="button" class="btn-sm fcbtn btn btn-outline btn-danger btn-1d" data-toggle="tooltip" data-placement="right" title="Remove" onclick="delele_parent_element(this, 'test')"><i class="fa fa-times"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="append_holder_for_test_entries"></div>
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <button type="button" class="btn btn-primary waves-effect waves-light" onclick="append_blank_entry('test')"><i class="fa fa-plus"></i> &nbsp; Ajouter Consultation</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
                                         </div>
                                     </div>                                   
                                 </form>

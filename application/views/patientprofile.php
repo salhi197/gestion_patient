@@ -85,7 +85,8 @@
                     <div class="col-12">
                         <div class="m-b-20">
                         <a href="<?php echo base_url('user/patients'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-arrow-left"></i>&nbsp; Retour à la liste des Patients</button></a>
-                        </div>
+                        <a href="<?php echo base_url('user/addprescription/patient')."/".$id; ?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-plus"></i>&nbsp; Nouveau Ordonnance</button></a>
+                    </div>
                     </div>
                 </div><!-- Ends Row -->
                 <div class="row">
