@@ -115,14 +115,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Taille</label>
-                                            <input type="text" class="form-control" name="height" placeholder="Entrez la hauteur" pattern="[0-9\']{1,3}" title="Enter Numeric values only(3 digit only)" required="">
+                                            <input type="text" class="form-control" name="height" placeholder="Entrez la hauteur"  title="Enter Numeric values only(3 digit only)" required="">
                                             <?php if($error['height']){?> <span class="text-danger"><?php echo $error['height']; ?></span> <?php } ?>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Poids</label>
-                                            <input type="text" class="form-control" name="weight" placeholder="Entrez le poids" pattern="[0-9]{1,3}" title="Enter Numeric values only(3 digit only)" required="">
+                                            <input type="text" class="form-control" name="weight" placeholder="Entrez le poids"  title="Enter Numeric values only(3 digit only)" required="">
                                             <?php if($error['weight']){?> <span class="text-danger"><?php echo $error['weight']; ?></span> <?php } ?>
                                         </div>
                                     </div>
@@ -142,45 +142,6 @@
                                                 <option value="AB-">AB-</option>
                                             </select>
                                             <?php if($error['blood_group']){?> <span class="text-danger"><?php echo $error['blood_group']; ?></span> <?php } ?>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Blood Pressure</label>
-                                            <input type="text" class="form-control" name="blood_pressure" placeholder="Entrez la tension artérielle" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
-                                            <?php if($error['blood_pressure']){?> <span class="text-danger"><?php echo $error['blood_pressure']; ?></span> <?php } ?>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Pulse</label>
-                                            <input type="text" class="form-control" name="pulse" placeholder="Entrez l'impulsion" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
-                                            <?php if($error['pulse']){?> <span class="text-danger"><?php echo $error['pulse']; ?></span> <?php } ?>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Respiration</label>
-                                            <input type="text" class="form-control" name="respiration" placeholder="Entrez la respiration" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
-                                            <?php if($error['respiration']){?> <span class="text-danger"><?php echo $error['respiration']; ?></span> <?php } ?>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Allergiz</label>
-                                            <input type="text" class="form-control" name="allergy" placeholder="Entrez les symptômes d'allergie"  required="">
-                                            <?php if($error['allergy']){?> <span class="text-danger"><?php echo $error['allergy']; ?></span> <?php } ?>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Diet</label>
-                                            <input type="text" class="form-control" name="diet" placeholder="Entrez le régime" required="">
-                                            <?php if($error['diet']){?> <span class="text-danger"><?php echo $error['diet']; ?></span> <?php } ?>
                                         </div>
                                     </div>
                                 </div>

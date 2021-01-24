@@ -119,18 +119,18 @@ class User_operation extends CI_Controller {
         $this->form_validation->set_rules('prenom', 'Patient prenom', 'required');
         $this->form_validation->set_rules('civilite', 'Patient civilite', 'required');
         
-        $this->form_validation->set_rules('age', 'Age', 'required|numeric');
-        $this->form_validation->set_rules('gender', 'Gender', 'required');
-        $this->form_validation->set_rules('phone', 'Phone Number', 'required|regex_match[/^[0-9\+-]+$/]');
-        $this->form_validation->set_rules('add', 'Address', 'required');
-        $this->form_validation->set_rules('height', 'Height', 'required|regex_match[/^[0-9\'"]+$/]');
-        $this->form_validation->set_rules('weight', 'Weight', 'required|numeric');
-        $this->form_validation->set_rules('blood_group', 'Blood Group', 'required');
-        $this->form_validation->set_rules('blood_pressure', 'Blood Pressure', 'required|numeric');
-        $this->form_validation->set_rules('pulse', 'Pulse', 'required|numeric');
-        $this->form_validation->set_rules('respiration', 'Respiration', 'required|numeric');
-        $this->form_validation->set_rules('allergy', 'Allergy', 'required');
-        $this->form_validation->set_rules('diet', 'Diet', 'required');
+        $this->form_validation->set_rules('age', 'Age', '');
+        $this->form_validation->set_rules('gender', 'Gender', '');
+        $this->form_validation->set_rules('phone', 'Phone Number', '');
+        $this->form_validation->set_rules('add', 'Address', '');
+        $this->form_validation->set_rules('height', 'Height', '');
+        $this->form_validation->set_rules('weight', 'Weight', '');
+        $this->form_validation->set_rules('blood_group', 'Blood Group', '');
+        //$this->form_validation->set_rules('blood_pressure', 'Blood Pressure', '|numeric');
+        //$this->form_validation->set_rules('pulse', 'Pulse', '|numeric');
+        //$this->form_validation->set_rules('respiration', 'Respiration', '|numeric');
+        //$this->form_validation->set_rules('allergy', 'Allergy', '');
+        //$this->form_validation->set_rules('diet', 'Diet', '');
         if ($this->form_validation->run() == FALSE)
         {
             $error['name'] = form_error('name');
@@ -160,14 +160,14 @@ class User_operation extends CI_Controller {
             $data['gender'] = $this->input->post('gender');
             $data['phone'] = $this->input->post('phone');
             $data['add'] = $this->input->post('add');
-            $data['height'] = $this->input->post('height');
-            $data['weight'] = $this->input->post('weight');
-            $data['b_group'] = $this->input->post('blood_group');
-            $data['b_pressure'] = $this->input->post('blood_pressure');
-            $data['pulse'] = $this->input->post('pulse');
-            $data['respiration'] = $this->input->post('respiration');
-            $data['allergy'] = $this->input->post('allergy');
-            $data['diet'] = $this->input->post('diet');
+            $data['height'] = $this->input->post('height') ?? "0";
+            $data['weight'] = $this->input->post('weight') ?? "0";
+            $data['b_group'] = $this->input->post('blood_group') ?? "0";
+            $data['b_pressure'] = $this->input->post('blood_pressure') ?? "0";
+            $data['pulse'] = $this->input->post('pulse') ?? "0";
+            $data['respiration'] = $this->input->post('respiration') ?? "0";
+            $data['allergy'] = $this->input->post('allergy') ?? "0";
+            $data['diet'] = $this->input->post('diet') ?? "0";
 
             //print_r($data);
             if($this->user_mo->addpatient($data))

@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="m-b-20">
-                                <a href="<?php echo base_url('user/addpatient'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-plus"></i>&nbsp; New Patient</button></a>
+                                <a href="<?php echo base_url('user/addpatient'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-plus"></i>&nbsp; Ajouter Patient</button></a>
                             </div>
                         </div>
                     </div><!-- Ends Row -->
