@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="m-b-20">
-                            <a href="<?php echo base_url('user/createinvoice'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-plus"></i>&nbsp; Create Invoice</button></a>
+                            <a href="<?php echo base_url('user/createinvoice'); ?>"><button type="button" class="btn btn-primary waves-effect waves-light"><i class="fa fa-plus"></i>&nbsp; Créer une facture</button></a>
                         </div>
                     </div>
                 </div><!-- Ends Row -->

@@ -65,7 +65,7 @@
                                                     <label for="patient" class="col-form-label text-muted">Patient</label>
                                                     <div class="input-group">
                                                         <select class="select2" id="myselect2" name="patient_id" required="">
-                                                            <option value="">Select</option>
+                                                            <option value="">Sélectionner</option>
                                                                 <?php foreach ( $info as $data ) : ?>
 
                                                             <option value="<?php echo $data['patient_id']; ?>"><?php echo $data['p_name']; ?></option>
@@ -83,7 +83,7 @@
                                                     </div><!-- input-group -->
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label for="time" class="col-form-label text-muted">Time</label>   
+                                                    <label for="time" class="col-form-label text-muted">Temps</label>   
                                                     <div class="input-group bootstrap-timepicker timepicker">
                                                         <input id="timepicker1" type="text" class="form-control">
                                                     </div>
@@ -94,7 +94,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <button type="button" id="btn_create" class="btn btn-primary waves-effect waves-light">Create Appoinment</button>
+                                                    <button type="button" id="btn_create" class="btn btn-primary waves-effect waves-light">Créer un rendez-vous</button>
                                                 </div>
                                             </form>
                                         </div>

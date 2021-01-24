@@ -42,7 +42,7 @@
                             <span class="mini-stat-icon bg-purple mr-0 float-right"><i class="mdi mdi-calendar-clock"></i></span>
                             <div class="mini-stat-info">
                                 <span class="counter text-purple"><?php echo $total['appointment']; ?></span>
-                                Total Appointment
+                                Rendez-vous total
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                     <div class="col-lg-4">
                         <div class="card m-b-20">
                             <div class="card-block">
-                                <h4 class="mt-0 header-title">Invoice Analytics</h4>
+                                <h4 class="mt-0 header-title">Analyse des factures</h4>
                                 <div id="morris-donut-chart" style="height: 400px"></div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                                                 <td><?php echo $data['age']; ?></td>
                                                 <td><?php echo $data['add']; ?></td>
                                                 <td>
-                                                    <a href="<?php echo base_url('user/patient_profile')."/".$data['patient_id'];?>"><button type="button" class="btn btn-1d btn-sm btn-outline-primary waves-effect waves-light">Manage Patient</button>
+                                                    <a href="<?php echo base_url('user/patient_profile')."/".$data['patient_id'];?>"><button type="button" class="btn btn-1d btn-sm btn-outline-primary waves-effect waves-light">Gérer le patient</button>
                                                 </td>
                                             </tr>
 
