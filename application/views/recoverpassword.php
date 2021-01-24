@@ -44,7 +44,7 @@
                         <form class="form-horizontal m-t-30">
                             <div class="form-group">
                                 <label for="useremail">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your registered email" required="">
+                                <input type="email" class="form-control" id="email" placeholder="Entrez votre email enregistré" required="">
                             </div>
 
                             <div class="form-group row m-t-20">

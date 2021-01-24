@@ -120,7 +120,7 @@
 
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <input type="text" class="form-control" placeholder="Notes" name="medicine_note[]" required="">
+                                                                        <input type="text" class="form-control" placeholder="Remarques" name="medicine_note[]" required="">
                                                                         <?php if($error['medicine_note']){?> <span class="text-danger"><?php echo $error['medicine_note']; ?></span> <?php } ?>
                                                                     </div>
 
@@ -161,7 +161,7 @@
 
                                                                     </div>
                                                                     <div class="col-md-5">
-                                                                        <input type="text" class="form-control" placeholder="Notes" name="test_note[]" required="">
+                                                                        <input type="text" class="form-control" placeholder="Remarques" name="test_note[]" required="">
                                                                         <?php if($error['test_note']){?> <span class="text-danger"><?php echo $error['test_note']; ?></span> <?php } ?>
                                                                         
                                                                     </div>

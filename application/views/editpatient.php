@@ -57,14 +57,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Nom</label>
-                                            <input type="text" class="form-control" name="name" placeholder="Enter patient name" required="" value="<?php echo $data[0]['p_name'] ?>">
+                                            <input type="text" class="form-control" name="name" placeholder="Entrez le nom du patient" required="" value="<?php echo $data[0]['p_name'] ?>">
                                             <input type="hidden" name="patient_id" value="<?php echo $data[0]['patient_id']; ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Âge</label>
-                                            <input type="text" class="form-control" placeholder="Enter patient's age" name="age" required="" value="<?php echo $data[0]['age'] ?>">
+                                            <input type="text" class="form-control" placeholder="Entrez l'âge du patient" name="age" required="" value="<?php echo $data[0]['age'] ?>">
                                         </div>
                                     </div>
                                 </div>
@@ -104,13 +104,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Numéro de téléphone</label>
-                                            <input type="text" class="form-control" name="phone" placeholder="Enter phone number" required="" value="<?php echo $data[0]['phone'] ?>">
+                                            <input type="text" class="form-control" name="phone" placeholder="Entrez le numéro de téléphone" required="" value="<?php echo $data[0]['phone'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Adresse</label>
-                                            <textarea name="add" rows="3" class="form-control" placeholder="Enter current address" required=""><?php echo $data[0]['add'] ?></textarea>
+                                            <textarea name="add" rows="3" class="form-control" placeholder="Entrez l'adresse actuelle" required=""><?php echo $data[0]['add'] ?></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -119,13 +119,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>la taille</label>
-                                            <input type="text" class="form-control" name="height" placeholder="Enter height" required="" value="<?php echo $data[0]['height'] ?>">
+                                            <input type="text" class="form-control" name="height" placeholder="Entrez la hauteur" required="" value="<?php echo $data[0]['height'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Poids</label>
-                                            <input type="text" class="form-control" name="weight" placeholder="Enter weight" required="" value="<?php echo $data[0]['weight'] ?>">
+                                            <input type="text" class="form-control" name="weight" placeholder="Entrez le poids" required="" value="<?php echo $data[0]['weight'] ?>">
                                         </div>
                                     </div>
                                 </div>
@@ -133,13 +133,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Groupe sanguin</label>
-                                            <input type="text" class="form-control" name="blood_group" placeholder="Enter blood group" required="" value="<?php echo $data[0]['b_group'] ?>">
+                                            <input type="text" class="form-control" name="blood_group" placeholder="Entrez le groupe sanguin" required="" value="<?php echo $data[0]['b_group'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Pression artérielle</label>
-                                            <input type="text" class="form-control" name="blood_pressure" placeholder="Enter blood pressure" required="" value="<?php echo $data[0]['b_pressure'] ?>">
+                                            <input type="text" class="form-control" name="blood_pressure" placeholder="Entrez la tension artérielle" required="" value="<?php echo $data[0]['b_pressure'] ?>">
                                         </div>
                                     </div>
                                 </div>
@@ -147,13 +147,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Impulsion</label>
-                                            <input type="text" class="form-control" name="pulse" placeholder="Enter pulse" required="" value="<?php echo $data[0]['pulse'] ?>">
+                                            <input type="text" class="form-control" name="pulse" placeholder="Entrez l'impulsion" required="" value="<?php echo $data[0]['pulse'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Respiration</label>
-                                            <input type="text" class="form-control" name="respiration" placeholder="Enter respiration" required="" value="<?php echo $data[0]['respiration'] ?>">
+                                            <input type="text" class="form-control" name="respiration" placeholder="Entrez la respiration" required="" value="<?php echo $data[0]['respiration'] ?>">
                                         </div>
                                     </div>
                                 </div>
@@ -161,13 +161,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Allergie</label>
-                                            <input type="text" class="form-control" name="allergy" placeholder="Enter allergy symptoms" required="" value="<?php echo $data[0]['allergy'] ?>">
+                                            <input type="text" class="form-control" name="allergy" placeholder="Entrez les symptômes d'allergie" required="" value="<?php echo $data[0]['allergy'] ?>">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Régime</label>
-                                            <input type="text" class="form-control" name="diet" placeholder="Enter diet" required="" value="<?php echo $data[0]['diet'] ?>">
+                                            <input type="text" class="form-control" name="diet" placeholder="Entrez le régime" required="" value="<?php echo $data[0]['diet'] ?>">
                                         </div>
                                     </div>
                                 </div>

@@ -61,7 +61,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Nom</label>
-                                            <input type="text" class="form-control" name="name" placeholder="Enter patient name" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" required="">
+                                            <input type="text" class="form-control" name="name" placeholder="Entrez le nom du patient" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" required="">
                                             <?php if($error['name']){?> <span class="text-danger"><?php echo $error['name']; ?></span> <?php } ?>
                                         </div>
                                     </div>
@@ -78,7 +78,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Age</label>
-                                            <input type="text" class="form-control" placeholder="Enter patient's age" name="age" pattern="[0-9]{1,3}" title="Enter Numeric values only(3 digit only)" required="">
+                                            <input type="text" class="form-control" placeholder="Entrez l'âge du patient" name="age" pattern="[0-9]{1,3}" title="Enter Numeric values only(3 digit only)" required="">
                                             <?php if($error['age']){?> <span class="text-danger"><?php echo $error['age']; ?></span> <?php } ?>
                                         </div>
                                     </div>
@@ -105,7 +105,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Address</label>
-                                            <textarea name="add" rows="3" class="form-control" placeholder="Enter current address" required=""></textarea>
+                                            <textarea name="add" rows="3" class="form-control" placeholder="Entrez l'adresse actuelle" required=""></textarea>
                                             <?php if($error['add']){?> <span class="text-danger"><?php echo $error['add']; ?></span> <?php } ?>
                                         </div>
                                     </div>
@@ -115,14 +115,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Taille</label>
-                                            <input type="text" class="form-control" name="height" placeholder="Enter height" pattern="[0-9\']{1,3}" title="Enter Numeric values only(3 digit only)" required="">
+                                            <input type="text" class="form-control" name="height" placeholder="Entrez la hauteur" pattern="[0-9\']{1,3}" title="Enter Numeric values only(3 digit only)" required="">
                                             <?php if($error['height']){?> <span class="text-danger"><?php echo $error['height']; ?></span> <?php } ?>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Poids</label>
-                                            <input type="text" class="form-control" name="weight" placeholder="Enter weight" pattern="[0-9]{1,3}" title="Enter Numeric values only(3 digit only)" required="">
+                                            <input type="text" class="form-control" name="weight" placeholder="Entrez le poids" pattern="[0-9]{1,3}" title="Enter Numeric values only(3 digit only)" required="">
                                             <?php if($error['weight']){?> <span class="text-danger"><?php echo $error['weight']; ?></span> <?php } ?>
                                         </div>
                                     </div>
@@ -147,7 +147,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Blood Pressure</label>
-                                            <input type="text" class="form-control" name="blood_pressure" placeholder="Enter blood pressure" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
+                                            <input type="text" class="form-control" name="blood_pressure" placeholder="Entrez la tension artérielle" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
                                             <?php if($error['blood_pressure']){?> <span class="text-danger"><?php echo $error['blood_pressure']; ?></span> <?php } ?>
                                         </div>
                                     </div>
@@ -156,14 +156,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Pulse</label>
-                                            <input type="text" class="form-control" name="pulse" placeholder="Enter pulse" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
+                                            <input type="text" class="form-control" name="pulse" placeholder="Entrez l'impulsion" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
                                             <?php if($error['pulse']){?> <span class="text-danger"><?php echo $error['pulse']; ?></span> <?php } ?>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Respiration</label>
-                                            <input type="text" class="form-control" name="respiration" placeholder="Enter respiration" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
+                                            <input type="text" class="form-control" name="respiration" placeholder="Entrez la respiration" pattern="[0-9]{1,4}" title="Enter Numeric values only(4 digit only)" required="">
                                             <?php if($error['respiration']){?> <span class="text-danger"><?php echo $error['respiration']; ?></span> <?php } ?>
                                         </div>
                                     </div>
@@ -172,14 +172,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Allergiz</label>
-                                            <input type="text" class="form-control" name="allergy" placeholder="Enter allergy symptoms"  required="">
+                                            <input type="text" class="form-control" name="allergy" placeholder="Entrez les symptômes d'allergie"  required="">
                                             <?php if($error['allergy']){?> <span class="text-danger"><?php echo $error['allergy']; ?></span> <?php } ?>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Diet</label>
-                                            <input type="text" class="form-control" name="diet" placeholder="Enter diet" required="">
+                                            <input type="text" class="form-control" name="diet" placeholder="Entrez le régime" required="">
                                             <?php if($error['diet']){?> <span class="text-danger"><?php echo $error['diet']; ?></span> <?php } ?>
                                         </div>
                                     </div>

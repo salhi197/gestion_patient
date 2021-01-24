@@ -56,12 +56,12 @@
                         <form class="form-horizontal m-t-30" method="post" action="<?php echo base_url('user_operation/login'); ?>">
                             <div class="form-group">
                                 <label for="username">Nom d'utilisateur</label>
-                                <input type="text" class="form-control" id="username" value="mohamed" name="username" placeholder="Enter username" autofocus>
+                                <input type="text" class="form-control" id="username" value="mohamed" name="username" placeholder="Saisissez votre nom d'utilisateur" autofocus>
                             </div>
 
                             <div class="form-group">
                                 <label for="userpassword">Mot de passe :</label>
-                                <input type="password" class="form-control" id="password" value="mohamed" name="password" placeholder="Enter password">
+                                <input type="password" class="form-control" id="password" value="mohamed" name="password" placeholder="Entrer le mot de passe">
                             </div>
 
                             <div class="form-group row m-t-20">

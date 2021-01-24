@@ -106,14 +106,14 @@
                                                             <div class="form-group">
                                                                 <div class="row">
                                                                     <div class="col-md-5">
-                                                                        <input type="text" class="form-control" placeholder="Invoice Title" name="invoice_title[]" required="">
+                                                                        <input type="text" class="form-control" placeholder="Titre de la facture" name="invoice_title[]" required="">
                                                                         <?php if($error['invoice_title']){?> <span class="text-danger"><?php echo $error['invoice_title']; ?></span> <?php } ?>
 
                                                                     </div>
                                                                     <div class="col-md-5">
                                                                         <div class="input-group">
                                                                             <span class="input-group-addon" id="basic-addon1">$</span>
-                                                                            <input type="text" class="form-control" placeholder="Amount" name="invoice_amount[]" pattern="[0-9]{1,}" title="Enter Numeric values only" required="">
+                                                                            <input type="text" class="form-control" placeholder="Montant" name="invoice_amount[]" pattern="[0-9]{1,}" title="Enter Numeric values only" required="">
                                                                         </div>
                                                                         <?php if($error['invoice_amount']){?> <span class="text-danger"><?php echo $error['invoice_amount']; ?></span> <?php } ?>
 

@@ -53,7 +53,7 @@
                         		<div class="col-md-6">
                         			<div class="form-group">
 		                                <label for="doctorname">Nom du docteur</label>
-		                                <input type="text" class="form-control" id="dname" name="dname" placeholder="Enter doctor's name" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" autofocus required="">
+		                                <input type="text" class="form-control" id="dname" name="dname" placeholder="Entrez le nom du médecin" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" autofocus required="">
                                         <?php if($error['dname']){?> <span class="text-danger"><?php echo $error['dname']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
@@ -61,7 +61,7 @@
                         		<div class="col-md-6">
                         			<div class="form-group">
 		                                <label for="doctorname">Spéciliaté </label>
-		                                <input type="text" class="form-control" id="specialite" name="specialite" placeholder="Enter doctor's name" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" autofocus required="">
+		                                <input type="text" class="form-control" id="specialite" name="specialite" placeholder="Entrez le nom du médecin" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" autofocus required="">
                                         <?php if($error['specialite']){?> <span class="text-danger"><?php echo $error['specialite']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
@@ -69,7 +69,7 @@
                         		<div class="col-md-6">
                         			<div class="form-group">
 		                                <label for="doctorname">Adresse : </label>
-		                                <input type="text" class="form-control" id="dname" name="dname" placeholder="Enter doctor's name" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" autofocus required="">
+		                                <input type="text" class="form-control" id="dname" name="dname" placeholder="Entrez le nom du médecin" pattern="[A-Za-z. ]{1,}" title="Enter Proper Name(Alphabets only)" autofocus required="">
                                         <?php if($error['dname']){?> <span class="text-danger"><?php echo $error['dname']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
@@ -77,7 +77,7 @@
                         		<div class="col-md-6">
                         			<div class="form-group">
 		                                <label for="email">Email:</label>
-		                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email address" required="">
+		                                <input type="email" class="form-control" id="email" name="email" placeholder="Entrer l'adresse e-mail" required="">
                                         <?php if($error['email']){?> <span class="text-danger"><?php echo $error['email']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
@@ -103,7 +103,7 @@
                         		<div class="col-md-6">
                         			<div class="form-group">
 		                                <label for="username">Utilisateur : </label>
-		                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required="">
+		                                <input type="text" class="form-control" id="username" name="username" placeholder="Saisissez votre nom d'utilisateur" required="">
                                         <?php if($error['username']){?> <span class="text-danger"><?php echo $error['username']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
@@ -113,14 +113,14 @@
                         		<div class="col-md-6">
                         			<div class="form-group">
 		                                <label for="userpassword">Mot de passe : </label>
-		                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required="">
+		                                <input type="password" class="form-control" id="password" name="password" placeholder="Entrer le mot de passe" required="">
                                         <?php if($error['password']){?> <span class="text-danger"><?php echo $error['password']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
                         		<div class="col-md-6">
                         			<div class="form-group">
 		                                <label for="confirmpassword">Confirmer mdp:</label>
-		                                <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Re-Enter password" required="">
+		                                <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Retaper le mot de passe" required="">
                                         <?php if($error['cpassword']){?> <span class="text-danger"><?php echo $error['cpassword']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
@@ -130,7 +130,7 @@
                         		<div class="col-md-12">
                         			<div class="form-group">
 		                                <label for="title">Titre de Systeme </label>
-		                                <input type="text" class="form-control" id="title" name="title" placeholder="Enter System Title" required="">
+		                                <input type="text" class="form-control" id="title" name="title" placeholder="Entrez le titre du système" required="">
                                         <?php if($error['title']){?> <span class="text-danger"><?php echo $error['title']; ?></span> <?php } ?>
 		                            </div>
                         		</div>
@@ -201,7 +201,7 @@
 
                             <div class="form-group row m-t-20">
                                 <div class="col-sm-12 text-right">
-                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Installer</button>
+                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Installateur</button>
                                 </div>
                             </div>
                         </form>
@@ -210,7 +210,7 @@
             </div>
 
             <div class="m-t-40 text-center">
-                <p class="text-white">© <?php echo date('Y'); ?> Patient Management System. <br> Crafted with <i class="mdi mdi-heart text-danger"></i> by Cosmos</p>
+                <p class="text-white">© <?php echo date('Y'); ?> Système de gestion des patients. <br> Crafted with <i class="mdi mdi-heart text-danger"></i> by Cosmos</p>
             </div>
 
         </div>
@@ -238,7 +238,7 @@
                     var cpass = $(this).val();
                     if(cpass != pass)
                     {
-                        alert('Password Not Match!! Please Re-enter Correct Passwrord.');
+                        alert('Le mot de passe ne correspond pas !! Veuillez saisir à nouveau le mot de passe correct.');
                     }    
                 });
             });
